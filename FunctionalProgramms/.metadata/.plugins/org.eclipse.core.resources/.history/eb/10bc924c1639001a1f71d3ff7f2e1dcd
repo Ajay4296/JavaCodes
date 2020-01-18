@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class ReplaceName {
+
+	public static void main(String[] args) {
+		System.out.println("enter your first name");
+		Scanner input = new Scanner(System.in);
+		String fname =input.next();
+		if(fname.length()>3)
+		System.out.println("hello"+fname);
+		else
+			System.out.println("Name should be greater than three");
+		exit();
+		System.out.println("hello"+fname+"How are you");
+			
+			
+		
+		
+
+	}
+
+}

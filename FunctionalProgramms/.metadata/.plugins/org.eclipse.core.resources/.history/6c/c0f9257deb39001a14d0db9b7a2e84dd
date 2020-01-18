@@ -1,0 +1,14 @@
+
+public class Distance {
+
+	public static void main(String[] args) {
+   System.out.println("enter distance point");
+   int x=Integer.parseInt(args[0]);
+   int y=Integer.parseInt(args[1])
+   double val=Math.pow(x,2)+Math.pow(y,2);
+   double dist=Math.sqrt(val);
+   System.out.println("euclidean distance from origin is  ="+dist);
+   
+	}
+
+}

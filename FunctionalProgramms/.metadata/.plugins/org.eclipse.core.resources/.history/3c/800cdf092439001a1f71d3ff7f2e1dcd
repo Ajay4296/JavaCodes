@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class HarmonicNumber {
+	public static void main(String[] args) {  
+	float hn=1;
+	int i=1,n,count;
+	
+	System.out.println("Enter nth  term");
+	Scanner input=new Scanner(System.in);
+	n=input.nextInt();
+	for(count=1;count<n;count++)
+	{
+		i+=4;
+		hn+=(float)1/i;
+	}
+
+	}
+
+}

@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Array2D {
+
+	public static void main(String[] args) {
+	System.out.println("enter size of twoD array");
+	Scanner obj=new Scanner(System.in);
+	int row=obj.nextInt();
+	int column=obj.nextInt();
+	System.out.println("enter number in array");
+	double twoDa[][]=new double[row][column];
+	for(int i=0;i<row;i++)
+	{
+		for(int j=0;j<column;j++)
+		{
+			twoDa[i][j]=obj.nextInt();
+			
+					
+		}
+	}
+	for(int i=0;i<row;i++)
+	{
+		for(int j=0;j<column;j++)
+		{
+			System.out.println(twoDa[i][j]+" ");
+		}
+	}
+	
+	
+
+	}
+
+}
