@@ -6,7 +6,7 @@ public class SwapNibble {
 		Scanner sc=new Scanner(System.in);
 		System.out.println("enter decimal number");
 		int dec=sc.nextInt();
-		toBinary(dec);
+		swapNibble(dec);
 		
 
 	}
@@ -14,8 +14,17 @@ public class SwapNibble {
 	{
 		String bin=Integer.toBinaryString(n);
 		System.out.println("binary representation:-"+bin);
+	}
 		
-		
+	
+	public static void swapNibble(int num)
+	{
+	int newnum = ((num & 0x0f)<<4|(num & 0xf0)>>4);
+	System.out.println("\n before swapping=\n"+num);
+	System.out.println("\n After swapping=\n"+newnum);
+	toBinary(newnum);
+
+	
 	}
 
 }
