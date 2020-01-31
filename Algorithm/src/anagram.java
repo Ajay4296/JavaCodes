@@ -12,7 +12,7 @@ public class anagram {
 	str1 =	removeSpace(str1);
 	str2 =	removeSpace(str2);
 	boolean b=compare(str1,str2);
-	if(b==true)
+	if(b)
 		System.out.println("string is anagram ");
 	else
 		System.out.println("string is not anagram");
@@ -44,11 +44,11 @@ public class anagram {
 			str1=Sort(str1);
 			str2=Sort(str2);
 		
-			char ch[]=str1.toCharArray();
-			char[] ch1=str2.toCharArray();
-			for(int i=0;i<ch.length;i++)
+			char ch1[]=str1.toCharArray();
+			char ch2[]=str2.toCharArray();
+			for(int i=0;i<ch1.length;i++)
 			{
-				if(ch[i]!=ch1[i]);
+				if(ch1[i]!=ch2[i])
 				return false;
 				
 			} 
@@ -73,15 +73,16 @@ public class anagram {
 		
 	static String Sort(String str)
 		{
+		
 			char[]ch=str.toCharArray();
 			 Arrays.sort(ch);
-			/*for(int i=0;i<ch.length;i++)
+		/*	for(int i=0;i<ch.length;i++)
 			{
-				for(int j=i+1;;j++)
+				for(int j=i+1;j<ch.length;j++)
 				{
-					int t=ch[i];
+					char t=ch[i];
 					ch[i]=ch[j];
-					ch[j]=ch[i];
+					ch[j] = t;
 				}
 			}*/
 			String st = new String(ch);
